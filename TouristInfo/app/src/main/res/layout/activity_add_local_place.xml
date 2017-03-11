@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_local_place"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.bunty.touristinfo.AddLocalPlace">
+
+
+    <TextView
+        android:text="ADD YOUR LOCAL PLACE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_addlocalplace"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Add Title:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_addlocalplace"
+        android:id="@+id/tv_addTitle"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="45dp"
+        android:hint="TITLE"
+        android:id="@+id/et_addTitle"
+        android:layout_toEndOf="@+id/tv_addTitle"
+        android:textSize="15dp"
+         />
+
+
+    <TextView
+        android:text="Add Description:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_addTitle"
+        android:id="@+id/tv_addDescription"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Description"
+        android:layout_toEndOf="@+id/tv_addDescription"
+        android:layout_below="@+id/et_addTitle"
+        android:layout_alignStart="@+id/et_addTitle"
+        android:id="@+id/et_addDescritpion"
+        android:textSize="15dp"/>
+
+
+
+    <TextView
+        android:text="Select Photo :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_addDescritpion"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_SelectPhoto"
+        android:textSize="15dp"/>
+
+    <Button
+        android:text="Take Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_SelectPhoto"
+        android:layout_toEndOf="@+id/tv_SelectPhoto"
+        android:layout_marginStart="20dp"
+        android:id="@+id/bt_addCamera" />
+
+    <Button
+        android:text="Upload From Gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_addGallery"
+        android:layout_alignBaseline="@+id/bt_addCamera"
+        android:layout_alignBottom="@+id/bt_addCamera"
+        android:layout_toEndOf="@+id/bt_addCamera" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_addGallery"
+
+        android:id="@+id/iv_setImage"/>
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_setImage"
+        android:layout_alignStart="@+id/bt_addCamera"
+        android:id="@+id/bt_save" />
+
+
+
+</RelativeLayout>
